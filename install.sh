@@ -1,9 +1,9 @@
 #!/bin/sh
-# install-linver.sh — Instala linver desde fuente
+# install.sh — Instala linver desde GitHub
 
 set -e
 
-REPO_URL="https://raw.githubusercontent.com/tu-usuario/linver/main/linver.cpp"
+REPO_URL="https://raw.githubusercontent.com/ezequielgk/linver-fetch/main/linver.cpp"
 BIN_NAME="linver"
 INSTALL_PATH="/usr/local/bin/$BIN_NAME"
 
@@ -16,9 +16,10 @@ fi
 echo "🛠️  Compilando $BIN_NAME..."
 if ! g++ -std=c++17 -O2 -s -o "$BIN_NAME" "$BIN_NAME.cpp"; then
     echo "❌ Error: Falló la compilación. ¿Tienes g++ instalado?"
-    echo "💡 Instala g++ con: sudo apt install g++   # Debian/Ubuntu"
-    echo "                   sudo pacman -S gcc     # Arch"
-    echo "                   sudo dnf install gcc-c++ # Fedora"
+    echo "💡 Instala g++ con:"
+    echo "   Debian/Ubuntu: sudo apt install build-essential"
+    echo "   Arch: sudo pacman -S gcc"
+    echo "   Fedora: sudo dnf install gcc-c++"
     exit 1
 fi
 
