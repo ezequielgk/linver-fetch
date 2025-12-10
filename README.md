@@ -5,7 +5,6 @@ Un fetch ligero, elegante y minimalista escrito en C++ que muestra información 
 Diseñado con limpieza visual en mente: sin bordes innecesarios, colores ANSI bien equilibrados y soporte para las distribuciones más populares.
 
 
-> *Nota: Puedes añadir una imagen de ejemplo en tu repositorio si lo deseas.*
 
 ---
 
