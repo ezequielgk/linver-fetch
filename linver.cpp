@@ -25,7 +25,6 @@
 #define ICON_HOST     ""
 #define ICON_COLORS   ""
 
-// ✅ Usa '-' (ASCII) en lugar de '─' (Unicode)
 std::string make_line(int n) {
     return std::string(n, '-');
 }
