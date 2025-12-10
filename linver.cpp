@@ -8,7 +8,6 @@
 #include <array>
 #include <unistd.h>
 
-// Colores ANSI
 #define ANSI_COLOR_CYAN    "\x1b[36m"
 #define ANSI_COLOR_GREEN   "\x1b[32m"
 #define ANSI_COLOR_YELLOW  "\x1b[33m"
@@ -19,7 +18,6 @@
 #define ANSI_COLOR_BLACK   "\x1b[30m"
 #define ANSI_RESET         "\x1b[0m"
 
-// Iconos
 #define ICON_KERNEL   ""
 #define ICON_UPTIME   ""
 #define ICON_DISTRO   ""
@@ -27,7 +25,7 @@
 #define ICON_HOST     ""
 #define ICON_COLORS   ""
 
-// Usa '-' en lugar de '─' para evitar advertencias
+// ✅ Usa '-' en lugar de '─' para evitar advertencias
 std::string make_line(int n) {
     return std::string(n, '-');
 }
