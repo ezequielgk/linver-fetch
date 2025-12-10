@@ -23,7 +23,7 @@ Diseñado con limpieza visual en mente: sin bordes innecesarios, colores ANSI bi
 
 Debes tener instalado en tu sistema:
 
-- `g++` (versión compatible con C++17)
+- `g++` (versión compatible con C++)
 - `wget` o `curl`
 - `sudo` (para instalar en `/usr/local/bin`)
 
