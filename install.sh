@@ -1,6 +1,6 @@
 #!/bin/sh
+# install.sh — Instala linver desde GitHub
 set -e
-
 REPO_URL="https://raw.githubusercontent.com/ezequielgk/linver-fetch/refs/heads/main/linver.cpp"
 BIN_NAME="linver"
 INSTALL_PATH="/usr/local/bin/$BIN_NAME"
@@ -28,4 +28,9 @@ if ! sudo install -m755 "$BIN_NAME" "$INSTALL_PATH"; then
 fi
 
 rm -f "$BIN_NAME" "$BIN_NAME.cpp"
-echo "✅ ¡Instalación completada! Ejecuta 'linver'."
+echo "✅ ¡Instalación completada!"
+echo "Ejecuta 'linver' para ver tu sistema con estilo."
+echo ""
+echo "Opciones útiles:"
+echo "  linver --help        → Mostrar ayuda"
+echo "  linver --list-logos  → Ver todos los logos disponibles"
