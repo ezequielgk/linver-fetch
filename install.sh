@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-REPO_URL="https://raw.githubusercontent.com/ezequielgk/linver-fetch/main/linver/linver.cpp"
+REPO_URL="https://raw.githubusercontent.com/ezequielgk/linver-fetch/refs/heads/main/linver.cpp"
 BIN_NAME="linver"
 INSTALL_PATH="/usr/local/bin/$BIN_NAME"
 
