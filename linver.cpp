@@ -191,7 +191,7 @@ int main(int argc, char* argv[]) {
     std::string uptime = exec("uptime -p");
     std::string arch = exec("uname -m");
     std::string user = exec("whoami");
-    std::string host = exec("hostname");
+    std::string host = exec("hostnamectl --static");
     std::string distro_name = getDistroName();
     std::string distro_id = getDistroID();
 
